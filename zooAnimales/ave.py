@@ -17,7 +17,7 @@ class Ave(Animal):
 
     @classmethod
     def getListado(cls):
-        return cls._listado
+        return len(cls._listado)
     
     def getColorPlumas(self):
         return self._colorPlumas
