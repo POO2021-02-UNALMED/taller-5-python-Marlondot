@@ -68,8 +68,9 @@ class Animal:
     
     def toString(self):
         if self._zona==[]:
-            answer="Mi nombre es {} tengo una edad de {}, habito en {} y mi genero es {}".format(self._nombre,self._edad,self._habitat,self._genero)
+            answer="Mi nombre es {}, tengo una edad de {}, habito en {} y mi genero es {}".format(self._nombre,self._edad,self._habitat,self._genero)
             return answer
         else:
-            answer="Mi nombre es {} tengo una edad de {}, habito en {} y mi genero es {}, la zona en la que me ubico es {}, en el {}".format(self._nombre,self._edad,self._habitat,self._genero,self._zona,self._zona[0].getZoo())
+            answer="Mi nombre es {}, tengo una edad de {}, habito en {} y mi genero es {}, la zona en la que me ubico es {}, en el {}".format(self._nombre,self._edad,self._habitat,self._genero,self._zona,self._zona[0].getZoo())
             return answer
+
