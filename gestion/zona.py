@@ -2,10 +2,9 @@
 
 class Zona:
 
-    def __init__(self,nombre,*args):
+    def __init__(self,nombre,zoo=None):
         self._nombre=nombre
-        if args!=():
-            Zona._zoo=args[0]
+        self._zoo=zoo
         self._animales=list()
 
     #
