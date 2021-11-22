@@ -2,7 +2,8 @@ class Zona:
 
     def __init__(self,nombre,*args):
         self._nombre=nombre
-        Zona._zoo=args[0]
+        if args.count!=0:
+            Zona._zoo=args[0]
         self._animales=list()
 
     #
