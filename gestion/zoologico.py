@@ -31,12 +31,12 @@ class Zoologico():
 
     @classmethod
     def agregarZonas(cls,zona):
-        cls._zonas.append(zona)
+        cls._zona.append(zona)
 
     @classmethod
     def cantidadTotalAnimales(cls):
         count=0
-        for zona in cls._zonas:
+        for zona in cls._zona:
             if zona!=None:
                 count+=zona.cantidadAnimales()
         
