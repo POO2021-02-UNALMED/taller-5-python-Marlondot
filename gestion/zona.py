@@ -23,13 +23,13 @@ class Zona:
     def setAnimales(self,animales):
         self._animales=animales
     
-    @classmethod
-    def getZoo(cls):
-        return cls._zoo
+    #@classmethod
+    def getZoo(self):
+        return self._zoo
 
-    @classmethod
-    def setZoo(cls,zoo):
-        cls._zoo=zoo
+    #@classmethod
+    def setZoo(self,zoo):
+        self._zoo=zoo
 
     #
     #Methods
