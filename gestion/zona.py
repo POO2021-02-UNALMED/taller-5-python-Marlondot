@@ -1,8 +1,10 @@
+#from zoologico import Zoologico
+
 class Zona:
 
     def __init__(self,nombre,*args):
         self._nombre=nombre
-        if args.count!=0:
+        if args!=():
             Zona._zoo=args[0]
         self._animales=list()
 
@@ -39,5 +41,7 @@ class Zona:
 
     def cantidadAnimales(self):
         self._animales.count()
+
+
     
 
