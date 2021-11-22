@@ -31,7 +31,7 @@ class Ave(Animal):
 
     @classmethod
     def cantidadAves(cls):
-        return cls._listado
+        return len(cls._listado)
 
     def movimiento():
         return "volar"

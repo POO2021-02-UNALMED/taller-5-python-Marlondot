@@ -63,7 +63,7 @@ class Animal:
 				+ "Aves: {}\n"
 				+ "Reptiles: {}\n"
 				+ "Peces: {}\n"
-				+ "Anfibios: {}")[0].format(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
+				+ "Anfibios: {}").format(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
         return answer
     
     def toString(self):
@@ -73,4 +73,3 @@ class Animal:
         else:
             answer="Mi nombre es {}, tengo una edad de {}, habito en {} y mi genero es {}, la zona en la que me ubico es {}, en el {}".format(self._nombre,self._edad,self._habitat,self._genero,self._zona,self._zona[0].getZoo())
             return answer
-
