@@ -41,4 +41,6 @@ class Zoologico():
                 count+=zona.cantidadAnimales()
         
         return count
+
+
     
