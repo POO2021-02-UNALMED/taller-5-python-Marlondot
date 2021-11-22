@@ -1,9 +1,8 @@
 class Zona:
-    _zoo=None 
 
-    def __init__(self,nombre,zoo):
+    def __init__(self,nombre,*args):
         self._nombre=nombre
-        Zona._zoo=zoo
+        Zona._zoo=args[0]
         self._animales=list()
 
     #
