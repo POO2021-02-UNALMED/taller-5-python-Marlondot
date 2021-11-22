@@ -1,11 +1,3 @@
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
-from zooAnimales.ave import Ave
-
-
-
 class Animal:
     _zona=list()
     _totalAnimales=0
@@ -62,6 +54,11 @@ class Animal:
 
     @classmethod
     def totalPorTipo(cls):
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.anfibio import Anfibio
+        from zooAnimales.pez import Pez
+        from zooAnimales.reptil import Reptil
+        from zooAnimales.ave import Ave
         answer=("Mamiferos: {}\n"
 				+ "Aves: {}\n"
 				+ "Reptiles: {}\n"
