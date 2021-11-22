@@ -59,11 +59,11 @@ class Animal:
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
         from zooAnimales.ave import Ave
-        answer=("Mamiferos: {}\n"
-				+ "Aves: {}\n"
-				+ "Reptiles: {}\n"
-				+ "Peces: {}\n"
-				+ "Anfibios: {}").format(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
+        answer=("Mamiferos : {}\n"
+				+ "Aves : {}\n"
+				+ "Reptiles : {}\n"
+				+ "Peces : {}\n"
+				+ "Anfibios : {}").format(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
         return answer
     
     def toString(self):
