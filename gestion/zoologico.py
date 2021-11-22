@@ -1,5 +1,5 @@
 class Zoologico():
-    _zonas=list()
+    _zona=list()
 
     def __init__(self,nombre,ubicacion):
         self._nombre=nombre
@@ -22,8 +22,8 @@ class Zoologico():
         self._ubicacion=ubicacion
     
     @classmethod
-    def getZonas(cls):
-        return cls._zonas
+    def getZona(cls):
+        return cls._zona
 
     #
     #methods
@@ -37,7 +37,8 @@ class Zoologico():
     def cantidadTotalAnimales(cls):
         count=0
         for zona in cls._zonas:
-            count+=zona.cantidadAnimales()
+            if zona!=None:
+                count+=zona.cantidadAnimales()
         
         return count
     
