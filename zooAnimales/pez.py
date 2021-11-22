@@ -49,6 +49,6 @@ class Pez(Animal):
         return Pez(nombre, edad, "oceano",genero,"rojo",6)
     
     @classmethod
-    def crearBacalaos(cls, nombre, edad, genero):
+    def crearBacalao(cls, nombre, edad, genero):
         cls.bacalaos+=1
         return Pez(nombre, edad, "oceano",genero,"gris",6)
