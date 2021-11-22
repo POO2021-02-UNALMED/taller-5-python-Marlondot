@@ -1,3 +1,11 @@
+from zooAnimales.mamifero import Mamifero
+from zooAnimales.anfibio import Anfibio
+from zooAnimales.pez import Pez
+from zooAnimales.reptil import Reptil
+from zooAnimales.ave import Ave
+
+
+
 class Animal:
     _zona=list()
     _totalAnimales=0
@@ -61,7 +69,7 @@ class Animal:
 				+ "Anfibios: {}")[0].format(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
         return answer
     
-    def __str__(self):
+    def toString(self):
         if self._zona.count==0:
             answer="Mi nombre es {} tengo una edad de {}, habito en {} y mi genero es {}".format(self._nombre,self._edad,self._habitat,self._genero)
             return answer
